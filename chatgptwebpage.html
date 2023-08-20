@@ -17,7 +17,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #d1d1d1; /* Slightly enhanced light gray for general text */
+            color: #d1d1d1; 
         }
 
         .container {
@@ -30,13 +30,13 @@
         }
 
         h1 {
-            color: #aa60ff; /* Enhanced purple for better visibility */
+            color: #aa60ff; 
             margin: 0;
             font-size: 2.5rem;
         }
 
         .sub-title {
-            color: #b0b0b0; /* Enhanced light gray for subtitles */
+            color: #b0b0b0;
             font-size: 1.5rem;
             margin: 10px 0;
         }
@@ -50,12 +50,12 @@
 
         .details h2 {
             margin-top: 0;
-            color: #aa60ff; /* Matching the title color */
+            color: #aa60ff;
         }
 
         .details p {
             font-size: 18px;
-            color: #b0b0b0; /* Enhanced light gray for paragraphs */
+            color: #b0b0b0; 
         }
 
         .benefits {
@@ -64,7 +64,7 @@
         }
 
         .benefits h2 {
-            color: #aa60ff; /* Matching the title color */
+            color: #aa60ff; 
         }
 
         ul {
@@ -83,7 +83,7 @@
             content: '✔';
             position: absolute;
             left: 0;
-            color: #e08eff; /* Lighter shade of purple for the tick mark */
+            color: #e08eff;
         }
 
         .btn {
@@ -91,7 +91,7 @@
             width: 200px;
             height: 50px;
             margin-top: 20px;
-            background-color: #aa60ff; /* Enhanced purple for button */
+            background-color: #aa60ff;
             text-align: center;
             border-radius: 25px;
             color: white;
@@ -99,12 +99,61 @@
             line-height: 50px;
             text-decoration: none;
             transition: background-color 0.3s, box-shadow 0.3s;
-            box-shadow: 0 0 15px #aa60ff; /* Glow effect retained */
+            box-shadow: 0 0 15px #aa60ff;
         }
 
         .btn:hover {
-            background-color: #8a40d7; /* Slightly darker shade for hover effect */
-            box-shadow: 0 0 20px #aa60ff, 0 0 10px #aa60ff; /* Enhanced glow on hover */
+            background-color: #8a40d7; 
+            box-shadow: 0 0 20px #aa60ff, 0 0 10px #aa60ff;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 80%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .sub-title, .details h2, .benefits h2 {
+                font-size: 1.2rem;
+            }
+
+            .details p, ul li {
+                font-size: 16px;
+            }
+
+            .btn {
+                width: 150px;
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .sub-title, .details h2, .benefits h2 {
+                font-size: 1rem;
+            }
+
+            .details p, ul li {
+                font-size: 14px;
+            }
+
+            .btn {
+                width: 130px;
+                height: 35px;
+                line-height: 35px;
+            }
         }
     </style>
 </head>
